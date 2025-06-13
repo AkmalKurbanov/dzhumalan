@@ -1,0 +1,67 @@
+.menu 
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background-color: rgba(0,0,0, 0.3)
+  z-index: 1
+  opacity: 0
+  pointer-events: none
+
+  ul
+    padding: 0
+    padding: 10px 0
+    li
+      list-style: none
+      display: block
+      a
+        display: flex
+        align-items: center
+        text-decoration: none
+        color: var(--primary)
+        font-size: rem(18)
+        padding: 5px 10px
+        font-weight: bold
+
+  &__bar
+    background-color: #fff
+    max-width: 300px
+    width: 100%      
+    height: 100%
+    transition: all .3s
+    transform: translateX(-100%)
+  &__profile
+    .header__user-name
+      font-size: 16px
+
+  &__profile-controls 
+    border-top: 2px solid var(--primary)
+    
+
+  .menu__profile
+    padding: 10px  
+  
+  &__profile-socials
+    padding: 10px 10px 
+    border-top: 2px solid var(--primary)
+
+    ul
+      display: flex
+      align-items: center
+      li
+        margin-right: 10px
+        &:last-child
+          margin-right: 0
+        a
+          padding: 0
+
+  &.active
+    opacity: 1
+    pointer-events: inherit
+
+    .menu__bar 
+      transform: none
+

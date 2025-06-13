@@ -1,0 +1,68 @@
+// 🎨 Простой список именованных цветов
+$color-palette: (
+  primary: #080A49,
+  secondary: #FF0000,
+  success: #199F83,
+  error: #ff0000,
+  warning: #fbbc05,
+  info: #5042c1,
+  grey: #8f8f8f,
+  black: #161616,
+  white: #ffffff
+);
+
+// 🔧 Генерация CSS-переменных
+:root {
+  @each $name, $color in $color-palette {
+    --#{$name}: #{$color};
+  }
+}
+
+// 🧱 Генерация утилитарных классов
+@each $name, $color in $color-palette {
+  // Цвет фона
+  .bg-#{$name} {
+    background-color: var(--#{$name});
+  }
+
+  // Цвет текста
+  .text-#{$name} {
+    color: var(--#{$name});
+  }
+
+  // Цвет бордера (опционально)
+  .border-#{$name} {
+    border-color: var(--#{$name});
+  }
+}
+
+
+$theme-vars: (
+  block-bg: #ffffff,
+  border-color: #ddd,
+  button-bg: #080A49,
+  button-text: #ffffff
+);
+
+:root {
+  @each $name, $value in $theme-vars {
+    --#{$name}: #{$value};
+  }
+}
+
+body.dark-theme {
+  @each $name, $value in $theme-vars {
+    @if $name == block-bg {
+      --#{$name}: #1e1e1e;
+    }
+    @else if $name == border-color {
+      --#{$name}: #444;
+    }
+    @else if $name == button-bg {
+      --#{$name}: #ffffff;
+    }
+    @else if $name == button-text {
+      --#{$name}: #000000;
+    }
+  }
+}

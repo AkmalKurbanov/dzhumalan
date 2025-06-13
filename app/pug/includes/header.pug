@@ -1,0 +1,39 @@
+header.header
+  .container
+    .header__panel
+      .header__controls
+        
+        a(href="#").header__controls-item
+          .icon
+            svg
+              use(xlink:href='sprite.svg#headphone')
+        
+        a(href="#").header__controls-item.header__controls-item--has-badge
+          .icon
+            svg
+              use(xlink:href='sprite.svg#ring')
+          .header__controls-item-badge.header__controls-item-badge--count
+            span.header__controls-item-badge-count 1
+
+        button#theme-toggle.theme-toggle 🌙
+    
+        
+        .header__controls-item.menu-js
+          .icon
+            svg
+              use(xlink:href='sprite.svg#hamburger')
+    
+    .header__user
+      a(href="#").header__user-avatar
+        img(src="images/avatar.png" alt="avatar")
+
+      .header__user-details
+        .header__user-id
+          span.item-id 123456789
+          button.header__user-copy.copy-js
+            .icon
+              svg
+                use(xlink:href='sprite.svg#copy')
+          span.id-tooltip Скопировано!      
+
+        a(href="#").header__user-name Улан Джумагулов

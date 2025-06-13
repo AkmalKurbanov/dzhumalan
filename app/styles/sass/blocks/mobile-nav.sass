@@ -1,0 +1,49 @@
+.mobile-nav
+  background: #EBEBFF
+  border-top: 1px solid var(--primary)
+  box-sizing: border-box
+
+  ul
+    margin: 0
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    li
+      list-style: none
+      width: 100%
+      text-align: center
+
+      &:first-child
+        a
+          padding-left: 0
+
+      &:last-child
+        a
+          padding-right: 0    
+
+      a
+        text-decoration: none
+        color: var(--primary)
+        font-weight: bold
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        font-size: rem(9)
+        padding: 10px 5px
+
+        .icon
+          width: 30px
+          height: 30px
+
+      &.active    
+        a
+          color: var(--secondary)
+        
+        .icon
+          fill: var(--secondary) 
+
+  

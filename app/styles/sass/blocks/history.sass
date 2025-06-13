@@ -1,0 +1,77 @@
+.history
+  padding-bottom: 20px
+
+  .container,
+  .block-wrap
+    overflow: hidden
+    box-sizing: border-box
+    height: calc( 100vh - 250px )
+
+  &__table-id
+    display: flex
+    align-items: center
+    position: relative
+
+    .icon
+      width: 20px
+      height: 20px
+
+  &__table
+    height: 100%
+    overflow: auto
+
+    &--status-green
+      td
+        color: var(--success)
+  
+      .icon
+        fill: var(--success)
+  
+    &--status-red
+      td
+        color: var(--error)
+  
+      .icon
+        fill: var(--error)
+  
+  table
+    width: 100%
+    border-collapse: separate
+    border-spacing: 10px 0
+
+    thead
+      th
+        font-size: 10px
+
+        &:nth-child(2),
+        &:nth-child(3)
+          text-align: left
+
+        &:nth-child(4)
+          text-align: right
+
+        &:last-child
+          text-align: right
+
+    tbody
+      td
+        font-size: 10px
+        vertical-align: top
+
+        &:last-child
+          text-align: right
+
+        &:nth-child(4)
+          text-align: right
+
+        span
+          font-weight: bold
+
+  .id-tooltip
+    position: absolute
+    font-size: 8px
+    color: white
+    background: var(--success)
+    padding: 1px 5px
+    border-radius: 3px
+    left: 100%

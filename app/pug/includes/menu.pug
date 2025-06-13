@@ -1,0 +1,71 @@
+.menu 
+  .menu__bar  
+    .menu__profile 
+      div(class="header__user")
+        a(class="header__user-avatar", href="#")
+          img(src="images/avatar.png", alt="avatar")
+        div(class="header__user-details")
+          div(class="header__user-id")
+            span.item-id 12345678911
+            button(class="header__user-copy copy-js")
+              .icon
+                svg
+                  use(xlink:href="sprite.svg#copy")
+            span.id-tooltip Скопировано!      
+          a(class="header__user-name", href="#") Улан Джумагулов 
+    ul 
+      li 
+        a(href="#") Пункт меню1
+      li 
+        a(href="#") Пункт меню2
+      li 
+        a(href="#") Пункт меню3
+      li 
+        a(href="#") Пункт меню4
+      li 
+        a(href="#") Пункт меню5
+      li 
+        a(href="#") Пункт меню6
+      li 
+        a(href="#") Пункт меню7
+
+    .menu__profile-controls 
+      ul
+        li
+          a(href="#") 
+            .icon
+              svg
+                use(xlink:href='sprite.svg#login')
+
+            span Вход        
+
+        li 
+           a(href="#") 
+            .icon
+              svg
+                use(xlink:href='sprite.svg#logout')
+
+            span Выход      
+
+    .menu__profile-socials
+      ul 
+        li 
+          a(href="#")
+            .icon
+              svg
+                use(xlink:href='sprite.svg#instagram')  
+        li 
+          a(href="#")
+            .icon
+              svg
+                use(xlink:href='sprite.svg#facebook')  
+        li 
+          a(href="#")
+            .icon
+              svg
+                use(xlink:href='sprite.svg#whatsapp')  
+        li 
+          a(href="#")
+            .icon
+              svg
+                use(xlink:href='sprite.svg#telegram')  

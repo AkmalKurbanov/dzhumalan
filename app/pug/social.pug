@@ -1,0 +1,80 @@
+extends layouts/main
+
+block vars
+  - var description = 'Социальные сети';
+  - var keywords= '';
+  - var ogtitle = '';
+  - var ogtype = '';
+  - var ogurl = '';
+  - var ogimg = '';
+
+block title
+  | Социальные сети
+block main
+  .wrapper
+    .content
+        include includes/page-title
+
+        .social 
+          .container 
+            a(href="#").social__item
+              .social__item-left
+                .social__logo 
+                  img(src="images/inst.png", alt="")
+
+                div 
+                  p Подписаться
+                  span @Academy.Dzhumalan
+
+              .social__item-right
+                .icon
+                  svg
+                    use(xlink:href='sprite.svg#angle-right')
+            a(href="#").social__item
+              .social__item-left
+                .social__logo 
+                  img(src="images/inst.png", alt="")
+
+                div 
+                  p Подписаться
+                  span @Dzhumalan
+
+              .social__item-right
+                .icon
+                  svg
+                    use(xlink:href='sprite.svg#angle-right')
+            a(href="#").social__item
+              .social__item-left
+                .social__logo 
+                  img(src="images/tel.png", alt="")
+
+                div 
+                  p Подписаться
+                  span @Marafon.Dzhumalan
+
+              .social__item-right
+                .icon
+                  svg
+                    use(xlink:href='sprite.svg#angle-right')
+            a(href="#").social__item
+              .social__item-left
+                .social__logo 
+                  img(src="images/play.png", alt="")
+
+                div 
+                  p Подписаться
+                  span @Academy.Dzhumalan
+
+              .social__item-right
+                .icon
+                  svg
+                    use(xlink:href='sprite.svg#angle-right')
+
+        
+
+
+
+    include includes/mobile-nav
+
+
+  include includes/scripts 

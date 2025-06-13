@@ -1,0 +1,343 @@
+extends layouts/main
+
+block vars
+  - var description = 'История';
+  - var keywords= '';
+  - var ogtitle = '';
+  - var ogtype = '';
+  - var ogurl = '';
+  - var ogimg = '';
+
+block title
+  | История
+block main
+  .wrapper
+    .content
+        include includes/come-back
+
+        .history 
+          .container 
+            .block-wrap
+              
+              .title-icon
+                .icon
+                  svg
+                    use(xlink:href='sprite.svg#history')
+                p История операций
+
+              .history__table 
+                table 
+                  thead
+                    tr 
+                      th Номер     
+                      th ID <br> login
+                      th Статус    
+                      th Дата <br> Время    
+                      th Сумма <br> Usdt
+                  tbody
+                    tr.history__table--status-green
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 1234567890 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                  
+                    tr.history__table--status-red
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 12345678902 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                    tr.history__table--status-green
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 1234567890 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                  
+                    tr.history__table--status-red
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 12345678902 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                    tr.history__table--status-green
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 1234567890 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                  
+                    tr.history__table--status-red
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 12345678902 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                    tr.history__table--status-green
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 1234567890 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                  
+                    tr.history__table--status-red
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 12345678902 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                    tr.history__table--status-green
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 1234567890 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                  
+                    tr.history__table--status-red
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 12345678902 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                    tr.history__table--status-green
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 1234567890 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                  
+                    tr.history__table--status-red
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 12345678902 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                    tr.history__table--status-green
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 1234567890 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                  
+                    tr.history__table--status-red
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 12345678902 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                    tr.history__table--status-green
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 1234567890 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                  
+                    tr.history__table--status-red
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 12345678902 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                    tr.history__table--status-green
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 1234567890 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                  
+                    tr.history__table--status-red
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 12345678902 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                    tr.history__table--status-green
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 1234567890 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                  
+                    tr.history__table--status-red
+                      td 1
+                      td
+                        .history__table-id
+                          span.history__table-id-value.item-id 12345678902 
+                          .icon.copy-js
+                            svg
+                              use(xlink:href='sprite.svg#copy') 
+                          span.id-tooltip Скопировано!
+                        p Азиза
+
+                      td Новый подписчик
+                      td 08.06.2025 12:30:34
+                      td 2
+                  
+
+            
+              
+                   
+                          
+                    
+
+        
+
+
+
+    include includes/mobile-nav
+
+
+  include includes/scripts 

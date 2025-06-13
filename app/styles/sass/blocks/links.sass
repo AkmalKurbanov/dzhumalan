@@ -1,0 +1,124 @@
+.links
+  display: flex
+  flex-wrap: wrap
+  margin-left: -5px
+  margin-right: -5px
+  align-items: stretch
+
+  &__item
+    background: white
+    border-radius: rem(15)
+    padding: rem(7) rem(10)
+    display: flex
+    justify-content: space-between
+    box-sizing: border-box
+    text-decoration: none
+    position: relative
+    height: 100%
+
+  &__item-info
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+
+    p
+      color: var(--primary)
+      font-weight: bold
+      line-height: auto
+      font-size: 18px
+
+    span
+      color: var(--success)
+      font-weight: bold
+      font-size: 20px
+      display: block
+
+    &--secondary  
+      span
+        color: var(--error)
+
+
+  &__col
+    width: 100%
+    padding: rem(5)
+
+    &--w50
+      width: calc( 50% - 10px )
+      .links__item-img
+        max-width: 30px
+        min-width: 30px
+        height: 30px
+
+      p
+        font-size: rem(13)
+
+
+  &__item-img
+    max-width: 55px
+    min-width: 55px
+    height: 55px
+    width: 100%
+    @include dif-xy-center
+
+  &__item-left
+    display: inline-flex
+
+  &__item-right
+    display: flex
+    flex-direction: column
+
+    &:has(:only-child)
+      justify-content: flex-end
+    
+    &:has(:not(:only-child))
+      justify-content: space-between
+
+  &__item-img-wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-right: 10px
+
+  &__item-kind
+    font-size: rem(9)
+    text-align: center
+    margin-top: 5px
+    font-weight: bold
+
+  &__item-img
+    border-radius: 50%
+    overflow: hidden
+    @include dif-xy-center
+    background: var(--primary)
+
+    img
+      width: 100%
+      max-width: 100%
+
+  &__item-status
+    font-size: rem(6)
+    color: white
+    border-radius: 10px
+    @include dif-xy-center
+    text-align: center
+    padding: 2px 5px
+    height: 8px
+    white-space: nowrap
+
+    &--error
+      background: var(--secondary)
+
+    &--success
+      background: var(--success)
+
+  &__item-time
+    color: var(--primary)
+    font-weight: bold
+    background: var(--success)
+    @include dif-xy-center
+    text-align: center
+    font-size: rem(9)
+    height: rem(15)
+    border: 1px solid var(--primary)
+    border-radius: 3px
+    padding: 0 2px

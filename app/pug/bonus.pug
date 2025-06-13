@@ -1,0 +1,98 @@
+extends layouts/main
+
+block vars
+  - var description = 'Бонусы';
+  - var keywords= '';
+  - var ogtitle = '';
+  - var ogtype = '';
+  - var ogurl = '';
+  - var ogimg = '';
+
+block title
+  | Бонусы
+block main
+  .wrapper
+    .content
+        include includes/page-title
+
+        .container
+          .links
+            .links__col.links__col--w50
+              a(href="#").links__item
+                .links__item-left
+                  .links__item-img-wrap
+                    .links__item-img
+                      img(src="", alt="")
+                  .links__item-info 
+                    p Бонусы System Upgrade = 25 usdt
+                    span 25 usdt
+           
+
+            .links__col.links__col--w50
+              a(href="#").links__item
+                .links__item-left
+                  .links__item-img-wrap
+                    .links__item-img
+                      img(src="", alt="")
+                  .links__item-info 
+                    p Бонусы упущенные
+                    span 25 usdt
+
+            .links__col
+              a(href="#").links__item
+                .links__item-left
+                  .links__item-img-wrap
+                    .links__item-img
+                      img(src="", alt="")
+                  .links__item-info 
+                    p Начисление бонусов 
+                    span 2 usdt
+                .links__item-right
+                  .links__item-time 23:30
+                  .links__item-status.links__item-status--success Выполнено 
+
+                  
+            .links__col
+              a(href="#").links__item
+                .links__item-left
+                  .links__item-img-wrap
+                    .links__item-img
+                      img(src="", alt="")
+                    span.links__item-kind trust wallet
+                  .links__item-info 
+                    p Начисление бонусов 
+                    span 2 usdt
+                .links__item-right
+                  .links__item-time 23:30
+                  .links__item-status.links__item-status--error Невыполнено 
+
+                  
+
+            .links__col.links__col--w50
+              a(href="#").links__item
+                .links__item-left
+                  .links__item-img-wrap
+                    .links__item-img
+                      img(src="", alt="")
+                  .links__item-info.links__item-info--secondary
+                    p Бонусы System Upgrade = 25 usdt
+                    span 25 usdt
+           
+
+            .links__col.links__col--w50
+              a(href="#").links__item
+                .links__item-left
+                  .links__item-img-wrap
+                    .links__item-img
+                      img(src="", alt="")
+                  .links__item-info.links__item-info--secondary 
+                    p Бонусы упущенные
+                    span 25 usdt
+                
+
+
+
+    include includes/mobile-nav
+
+
+  include includes/scripts 

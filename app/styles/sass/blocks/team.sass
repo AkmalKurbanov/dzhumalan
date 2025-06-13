@@ -1,0 +1,53 @@
+.team
+  &__kind 
+    display: flex
+    flex-wrap: wrap
+    box-sizing: border-box
+    margin-left: -5px
+    margin-right: -5px
+    margin-top: 10px
+
+  &__col  
+    width: 50%
+    padding: 5px
+    box-sizing: border-box
+  
+  &__kind-wrap
+    border-radius: 15px
+    background: white
+    padding: 10px
+    text-align: center
+    box-sizing: border-box
+    h2
+      font-size: 18px
+    p
+      font-size: 18px
+      font-weight: bold
+    
+  .team-table
+    max-height: 400px
+    overflow-y: auto
+
+    table
+      width: 100%
+      border-collapse: separate
+      border-spacing: 0 10px
+      tr
+
+        td
+          vertical-align: top
+          font-size: 12px
+          span
+            font-weight: bold
+
+          &:last-child
+            text-align: right
+            padding-right: 5px
+
+    &__id
+      display: flex
+      .icon
+        width: 20px
+        height: 20px
+        margin-left: 10px
+    

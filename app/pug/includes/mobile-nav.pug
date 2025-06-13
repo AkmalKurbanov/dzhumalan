@@ -1,0 +1,15 @@
+.mobile-nav
+  .container
+    ul 
+      mixin mobileNav(title, icon, active)
+        li(class=active)
+          a(href="#") 
+            .icon
+              svg
+                use(xlink:href='sprite.svg#'+icon)
+            span=title
+      +mobileNav('Главная', 'home', 'active')      
+      +mobileNav('Видеокурсы', 'videoles')      
+      +mobileNav('Моя команда', 'team')      
+      +mobileNav('Бонусы', 'wallet')      
+      +mobileNav('Соц.сети', 'social')      
