@@ -43,14 +43,24 @@
     overflow: hidden
     @include dif-xy-center
     border-radius: 50%
-    min-width: rem(50)
-    max-width: rem(50)
-    height: rem(50)
+    min-width: rem(70)
+    max-width: rem(70)
+    height: rem(70)
     background: white
     margin-right: rem(10)
+    border: 1px solid #fff
+    position: relative
 
     img
       width: 100%
+      position: relative
+
+  &__user-avatar-default
+    object-fit: contain
+    position: absolute !important
+    width: 100%
+    height: 100%
+
 
   &__user-id
     display: flex

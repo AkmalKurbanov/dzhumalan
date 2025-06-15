@@ -10,31 +10,45 @@
     width: rem(100)
     height: rem(100)
     position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid var(--primary)
+    border-radius: 50%
+  
 
     input
       display: none
     
-    .edit  
-      position: absolute
-      bottom: 0
-      right: 0
+  .edit  
+    position: absolute
+    bottom: 0
+    left: 100%
 
   &__avatar-img
     position: relative
     border-radius: 50%
     overflow: hidden
-    border: 2px solid var(--primary)
     @include dif-xy-center
-    width: 100%
-    height: 100%
+    width: calc( 100% - 6px )
+    height: calc( 100% - 6px )
     background: white
+    border: 1px solid var(--primary)
+
 
     img
       width: 100%
       height: 100%
       object-fit: cover
       display: block
-
+      position: absolute
+      
+  &__avatar-img-default
+    position: absolute
+    width: 100%
+    height: 100%
+    object-fit: contain !important
+    
 
   &__info
     font-weight: bold
@@ -45,6 +59,8 @@
       li
         list-style: none
         margin-bottom: 10px
+        color: #02079A
+
         &:last-child
           margin-bottom: 0
 
@@ -56,21 +72,31 @@
 
       li
         list-style: none
-        border: 2px solid var(--primary)
+        border: 2px solid #02079A
         border-radius: 15px        
         margin-bottom: 10px
+        color: #02079A
 
   &__add-info-item
     padding: 5px 15px
     display: flex
     align-items: center
     justify-content: space-between
+    position: relative
 
+    .icon
+      width: 30px
+      height: 30px
+      fill: #02079A
     p
       font-weight: bold
       font-size: rem(18)
 
     .edit
       background: none
+      position: relative
+      left: auto
+      bottom: auto
+      
       .icon
         fill: var(--primary)  

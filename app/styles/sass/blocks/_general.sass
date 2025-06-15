@@ -45,10 +45,13 @@ body
 .edit
   width: 30px
   height: 30px
-  background: var(--primary)
   @include dif-xy-center
   cursor: pointer
-  border-radius: 5px
+  border-radius: 50%
+  overflow: hidden
+  img
+    width: 100%
+    
   .icon
     fill: white
 
@@ -70,3 +73,15 @@ body
 .id-tooltip  
   display: none
   font-size: rem(10)    
+
+.arror-rigth
+  width: 40px
+  height: 40px
+  @include dif-xy-center    
+  position: relative
+  
+  img
+    object-fit: contain
+    position: absolute
+    width: 100%
+    height: 100%

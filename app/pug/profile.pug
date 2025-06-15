@@ -21,11 +21,10 @@ block main
               .profile__top
                 .profile__avatar
                   .profile__avatar-img
-                    img(src="images/avatar.png", alt="Аватар")
+                    img(src="images/dist/Avatar.png" alt="avatar").profile__avatar-img-default
+                    //- img(src="images/dist/Avatar.png" alt="avatar")
                   label.edit(for="avatar-upload")
-                    .icon
-                      svg
-                        use(xlink:href='sprite.svg#edit')
+                    img(src="images/dist/edit.png", alt="")
                   input#avatar-upload(type="file", accept="image/*")
 
                 .profile__info 
@@ -44,9 +43,7 @@ block main
                     p +996 999 999 999
 
                     .edit
-                      .icon
-                        svg
-                          use(xlink:href='sprite.svg#edit')
+                      img(src="images/dist/edit.png", alt="")
                   
                   li.profile__add-info-item 
                     svg(width="25",  viewBox="0 0 99 112", fill="none", xmlns="http://www.w3.org/2000/svg")
@@ -62,9 +59,7 @@ block main
                     p rfx3938cc2232vsdsfzx
                   
                     .edit
-                      .icon
-                        svg
-                          use(xlink:href='sprite.svg#edit')
+                      img(src="images/dist/edit.png", alt="")
 
                   li.profile__add-info-item 
                     .icon
@@ -74,9 +69,7 @@ block main
                     p Русский язык
 
                     .edit
-                      .icon
-                        svg
-                          use(xlink:href='sprite.svg#edit')
+                      img(src="images/dist/edit.png", alt="")
 
 
 
