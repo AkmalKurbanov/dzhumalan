@@ -7,14 +7,41 @@
 
   &__item
     background: white
-    border-radius: rem(15)
-    padding: rem(7) rem(10)
-    display: flex
-    justify-content: space-between
+    border-radius: 20px
+    padding: 16px
     box-sizing: border-box
     text-decoration: none
     position: relative
     height: 100%
+    display: block
+
+  &__item-flex-wrap
+    display: flex
+    justify-content: space-between
+
+    &--addition-info
+      margin-top: 12px
+
+      .links__item-img
+        max-width: 42px
+        max-height: 42px
+        width: auto
+        height: auto
+
+      .links__item-img
+        .icon
+          fill: #7800FF
+          width: 24px
+          height: 24px
+
+      .links__item-info
+        p
+          font-size: 11px
+          font-weight: 600
+          color: #7800FF
+          line-height: 14px
+
+
 
   &__item-info
     display: flex
@@ -23,14 +50,13 @@
 
     p
       color: var(--primary)
-      font-weight: bold
-      line-height: auto
-      font-size: 18px
+      font-weight: 700
+      font-size: 16px
 
     span
       color: var(--success)
-      font-weight: bold
-      font-size: 20px
+      font-weight: 700
+      font-size: 18px
       display: block
 
     &--secondary  
@@ -40,28 +66,49 @@
 
   &__col
     width: 100%
-    padding: rem(5)
+    padding: rem(8)
 
     &--w50
-      width: calc( 50% - 10px )
+      width: calc( 50% - 16px )
+
+      .links__item-img-wrap
+        margin-right: 8px
+
       .links__item-img
-        max-width: 30px
-        min-width: 30px
-        height: 30px
+        max-width: 32px
+        min-width: 32px
+        height: 32px
+
+      .links__item-img-mini   
+        width: 12px 
+        height: 12px
+        right: 0
+        bottom: 0
+      
+      .links__item-left
+        align-items: flex-start
+
+      .links__item
+        padding:  16px 10px 16px 16px
 
       p
-        font-size: rem(13)
+        font-size: rem(12)
+        margin-bottom: 8px
 
+    &--secondary
+      span
+        color: var(--secondary)
 
   &__item-img
-    max-width: 55px
-    min-width: 55px
-    height: 55px
+    max-width: 42px
+    min-width: 42px
+    height: 42px
     width: 100%
     @include dif-xy-center
 
   &__item-left
     display: inline-flex
+    align-items: center
 
   &__item-right
     display: flex
@@ -77,7 +124,8 @@
     display: flex
     flex-direction: column
     align-items: center
-    margin-right: 10px
+    margin-right: 16px
+    position: relative
 
   &__item-kind
     font-size: rem(9)
@@ -86,23 +134,37 @@
     font-weight: bold
 
   &__item-img
-    border-radius: 50%
-    overflow: hidden
     @include dif-xy-center
 
     img
       width: 100%
       max-width: 100%
 
+  &__item-img-mini 
+    width: 20px
+    height: 20px
+    position: absolute
+    right: -2px
+    bottom: -2px
+    @include dif-xy-center
+
+    img
+      width: 100%
+      max-width: 100%
+
+
   &__item-status
-    font-size: rem(6)
-    color: white
-    border-radius: 10px
     @include dif-xy-center
     text-align: center
-    padding: 2px 5px
+    padding: 4px 12px
     height: 8px
     white-space: nowrap
+    height: 24px
+    border-radius: 24px
+    font-size: 11px
+    color: #fff
+    box-sizing: border-box
+    min-width: 100px
 
     &--error
       background: var(--secondary)
@@ -112,12 +174,12 @@
 
   &__item-time
     color: var(--primary)
-    font-weight: bold
-    background: var(--success)
+    font-weight: 500
     @include dif-xy-center
     text-align: center
-    font-size: rem(9)
-    height: rem(15)
-    border: 1px solid var(--primary)
-    border-radius: 3px
-    padding: 0 2px
+    font-size: 14px
+
+    .icon
+      width: 16px
+      height: 16px
+      margin-right: 3px

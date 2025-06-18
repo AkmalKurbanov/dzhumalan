@@ -1,4 +1,5 @@
 .profile
+  padding-bottom: 20px
 
   &__top
     display: flex
@@ -7,13 +8,12 @@
     text-align: center
 
   &__avatar
-    width: rem(100)
-    height: rem(100)
+    width: rem(140)
+    height: rem(140)
     position: relative
     display: flex
     align-items: center
     justify-content: center
-    border: 1px solid var(--primary)
     border-radius: 50%
   
 
@@ -22,8 +22,11 @@
     
   .edit  
     position: absolute
+    right: 0
     bottom: 0
-    left: 100%
+
+    .icon
+      fill: var(--primary)
 
   &__avatar-img
     position: relative
@@ -33,7 +36,6 @@
     width: calc( 100% - 6px )
     height: calc( 100% - 6px )
     background: white
-    border: 1px solid var(--primary)
 
 
     img
@@ -53,44 +55,48 @@
   &__info
     font-weight: bold
     color: var(--primary)    
-    padding: 15px 0
-    ul
-      padding: 0
-      li
-        list-style: none
-        margin-bottom: 10px
-        color: #02079A
+    margin-top: 16px
+    margin-bottom: 24px
 
-        &:last-child
-          margin-bottom: 0
+    p
+      font-weight: 600
 
   &__add-info
-    border-top: 2px solid var(--primary)
     padding-top: 15px
     ul
       padding: 0
 
       li
         list-style: none
-        border: 2px solid #02079A
-        border-radius: 15px        
-        margin-bottom: 10px
+        border-bottom: 1px solid #D9D9D9
         color: #02079A
 
+        &:first-child
+          padding-top: 0
+
+        &:last-child
+          border: none
+          padding-bottom: 0
+          
   &__add-info-item
-    padding: 5px 15px
+    padding: 8px 0
+    position: relative
     display: flex
     align-items: center
     justify-content: space-between
-    position: relative
 
     .icon
       width: 30px
       height: 30px
       fill: #02079A
-    p
-      font-weight: bold
+    
+    input
       font-size: rem(18)
+      border: none
+      color: var(--primary)
+      outline: none
+      pointer-events: none
+      background: none
 
     .edit
       background: none
@@ -100,3 +106,13 @@
       
       .icon
         fill: var(--primary)  
+
+  &__add-info-label    
+    font-size: 12px
+    font-weight: 500  
+    color: var(--success)
+    margin-bottom: 2px
+
+  &__add-info-item 
+    img
+      height: 27px

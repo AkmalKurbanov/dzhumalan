@@ -28,39 +28,32 @@
       <header class="header">
         <div class="container">
           <div class="header__panel">
-            <div class="header__controls"><a class="header__controls-item" href="#">
-                <div class="icon">
-                  <svg>
-                    <use xlink:href="sprite.svg#headphone"></use>
-                  </svg>
-                </div></a><a class="header__controls-item header__controls-item--has-badge" href="#">
-                <div class="icon">
-                  <svg>
-                    <use xlink:href="sprite.svg#ring"></use>
-                  </svg>
-                </div>
-                <div class="header__controls-item-badge header__controls-item-badge--count"><span class="header__controls-item-badge-count">1</span></div></a>
-              <button class="theme-toggle" id="theme-toggle">🌙</button>
-              <div class="header__controls-item menu-js">
-                <div class="icon">
-                  <svg>
-                    <use xlink:href="sprite.svg#hamburger"></use>
-                  </svg>
+            <div class="header__controls">
+              <div class="header__user"><a class="header__user-avatar" href="#"><img class="header__user-avatar-default" src="images/dist/Avatar.png" alt="avatar"><img src="images/dist/Avatar.png" alt="avatar"></a>
+                <div class="header__user-details">
+                  <div class="header__user-id"><span class="item-id">123456789</span>
+                    <button class="header__user-copy copy-js">
+                      <div class="icon">
+                        <svg>
+                          <use xlink:href="sprite.svg#copy"></use>
+                        </svg>
+                      </div>
+                    </button><span class="id-tooltip">Скопировано!      </span>
+                  </div><a class="header__user-name" href="#">Улан Джумагулов</a>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="header__user"><a class="header__user-avatar" href="#"><img class="header__user-avatar-default" src="images/dist/Avatar.png" alt="avatar"></a>
-            <div class="header__user-details">
-              <div class="header__user-id"><span class="item-id">123456789</span>
-                <button class="header__user-copy copy-js">
+              <div><a class="header__controls-item" href="#">
                   <div class="icon">
                     <svg>
-                      <use xlink:href="sprite.svg#copy"></use>
+                      <use xlink:href="sprite.svg#headphone"></use>
+                    </svg>
+                  </div></a><a class="header__controls-item header__controls-item--has-badge" href="#">
+                  <div class="icon">
+                    <svg>
+                      <use xlink:href="sprite.svg#ring"></use>
                     </svg>
                   </div>
-                </button><span class="id-tooltip">Скопировано!      </span>
-              </div><a class="header__user-name" href="#">Улан Джумагулов</a>
+                  <div class="header__controls-item-badge header__controls-item-badge--count"><span class="header__controls-item-badge-count">2</span></div></a></div>
             </div>
           </div>
         </div>
@@ -69,22 +62,16 @@
         <div class="swiper slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="slide-item"> </div>
+              <div class="slide-item"> <img src="images/dist/slider.jpg" alt=""></div>
             </div>
             <div class="swiper-slide"> 
-              <div class="slide-item"> </div>
+              <div class="slide-item"> <img src="images/dist/slider.jpg" alt=""></div>
             </div>
             <div class="swiper-slide"> 
-              <div class="slide-item"> </div>
+              <div class="slide-item"> <img src="images/dist/slider.jpg" alt=""></div>
             </div>
             <div class="swiper-slide"> 
-              <div class="slide-item"> </div>
-            </div>
-            <div class="swiper-slide"> 
-              <div class="slide-item"> </div>
-            </div>
-            <div class="swiper-slide"> 
-              <div class="slide-item"> </div>
+              <div class="slide-item"> <img src="images/dist/slider.jpg" alt=""></div>
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -93,47 +80,65 @@
       <div class="container">
         <div class="links">
           <div class="links__col"><a class="links__item" href="#">
-              <div class="links__item-left">
-                <div class="links__item-img-wrap">
-                  <div class="links__item-img"><img src="images/dist/link1.png" alt=""></div>
+              <div class="links__item-flex-wrap">
+                <div class="links__item-left">
+                  <div class="links__item-img-wrap">
+                    <div class="links__item-img"><img src="images/dist/link1.png" alt=""></div>
+                    <div class="links__item-img-mini"> <img src="images/dist/link-min.png" alt=""></div>
+                  </div>
+                  <div class="links__item-info"> 
+                    <p>Начисление бонусов </p><span>0,00 USDT</span>
+                  </div>
                 </div>
-                <div class="links__item-info"> 
-                  <p>Начисление бонусов </p><span>2 usdt</span>
-                </div>
-              </div>
-              <div class="links__item-right">
-                <div class="links__item-time">23:30</div>
-                <div class="links__item-status links__item-status--success">Выполнено </div>
               </div></a></div>
           <div class="links__col"><a class="links__item" href="#">
-              <div class="links__item-left">
-                <div class="links__item-img-wrap">
-                  <div class="links__item-img"><img src="images/dist/link3.png" alt=""></div><span class="links__item-kind">trust wallet</span>
+              <div class="links__item-flex-wrap">
+                <div class="links__item-left">
+                  <div class="links__item-img-wrap">
+                    <div class="links__item-img"><img src="images/dist/link2.png" alt=""></div>
+                  </div>
+                  <div class="links__item-info"> 
+                    <p>Начисление бонусов </p><span>2 usdt</span>
+                  </div>
                 </div>
-                <div class="links__item-info"> 
-                  <p>Начисление бонусов </p><span>2 usdt</span>
+                <div class="links__item-right">
+                  <div class="links__item-time">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="sprite.svg#clock"> </use>
+                      </svg>
+                    </div><span>23:30</span>
+                  </div>
                 </div>
               </div>
-              <div class="links__item-right">
-                <div class="links__item-time">23:30</div>
-                <div class="links__item-status links__item-status--success">Выполнено </div>
+              <div class="links__item-flex-wrap links__item-flex-wrap--addition-info">
+                <div class="links__item-left">
+                  <div class="links__item-img-wrap">
+                    <div class="links__item-img">
+                      <div class="icon">
+                        <svg>
+                          <use xlink:href="sprite.svg#info"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="links__item-info"> 
+                    <p>Условие: <br> 1 личник в текущем месяце</p>
+                  </div>
+                </div>
+                <div class="links__item-right">
+                  <div class="links__item-status links__item-status--error">Не выполнено</div>
+                </div>
               </div></a></div>
-          <div class="links__col links__col--w50"><a class="links__item" href="#">
-              <div class="links__item-left">
-                <div class="links__item-img-wrap">
-                  <div class="links__item-img"><img src="images/dist/link1.1.png" alt=""></div>
-                </div>
-                <div class="links__item-info"> 
-                  <p>Бонусы System Upgrade = 25 usdt</p><span>25 usdt</span>
-                </div>
-              </div></a></div>
-          <div class="links__col links__col--w50"><a class="links__item" href="#">
-              <div class="links__item-left">
-                <div class="links__item-img-wrap">
-                  <div class="links__item-img"><img src="images/dist/link1.1.png" alt=""></div>
-                </div>
-                <div class="links__item-info"> 
-                  <p>Бонусы упущенные</p><span>25 usdt</span>
+          <div class="links__col"><a class="links__item" href="#">
+              <div class="links__item-flex-wrap">
+                <div class="links__item-left">
+                  <div class="links__item-img-wrap">
+                    <div class="links__item-img"><img src="images/dist/link3.png" alt=""></div>
+                  </div>
+                  <div class="links__item-info"> 
+                    <p>Общая сумма полученных бонусов </p><span>25 USDT</span>
+                  </div>
                 </div>
               </div></a></div>
         </div>
@@ -142,110 +147,242 @@
     <div class="mobile-nav">
       <div class="container">
         <ul> 
-                    <li class="active"><a href="#"> 
+                    <li class="active"><a href="#">
                         <div class="icon">
                           <svg>
                             <use xlink:href="sprite.svg#home"></use>
                           </svg>
                         </div><span>Главная</span></a></li>
-                    <li><a href="#"> 
+                    <li><a href="#">
                         <div class="icon">
                           <svg>
-                            <use xlink:href="sprite.svg#videoles"></use>
+                            <use xlink:href="sprite.svg#videoless"></use>
                           </svg>
-                        </div><span>Видеокурсы</span></a></li>
-                    <li><a href="#"> 
+                        </div><span>Курсы</span></a></li>
+                    <li><a href="#">
                         <div class="icon">
                           <svg>
                             <use xlink:href="sprite.svg#team"></use>
                           </svg>
-                        </div><span>Моя команда</span></a></li>
-                    <li><a href="#"> 
+                        </div><span>Команда</span></a></li>
+                    <li><a href="#">
                         <div class="icon">
                           <svg>
                             <use xlink:href="sprite.svg#wallet"></use>
                           </svg>
                         </div><span>Бонусы</span></a></li>
-                    <li><a href="#"> 
+                    <li><a class="menu-js" href="#">
                         <div class="icon">
                           <svg>
-                            <use xlink:href="sprite.svg#social"></use>
+                            <use xlink:href="sprite.svg#menu"></use>
                           </svg>
-                        </div><span>Соц.сети</span></a></li>
+                        </div><span>Меню</span></a></li>
         </ul>
       </div>
     </div>
   </div>
   <script src="js/app.min.js"> </script>
-  <div class="menu"> 
-    <div class="menu__bar"> 
-      <div class="menu__profile"> 
-        <div class="header__user"><a class="header__user-avatar" href="#"><img class="header__user-avatar-default" src="images/dist/Avatar.png" alt="avatar"></a>
-          <div class="header__user-details">
-            <div class="header__user-id"><span class="item-id">12345678911</span>
-              <button class="header__user-copy copy-js">
-                <div class="icon">
-                  <svg>
-                    <use xlink:href="sprite.svg#copy"></use>
-                  </svg>
-                </div>
-              </button><span class="id-tooltip">Скопировано!      </span>
-            </div><a class="header__user-name" href="#">Улан Джумагулов </a>
+  <div class="menu">
+    <div class="container">
+      <h2 class="title">Меню</h2>
+      <div class="block-wrap"><a class="menu__item" href="#"> 
+          <div class="menu__item-left"> 
+            <div class="header__user">
+              <div class="header__user-avatar"><img class="header__user-avatar-default" src="images/dist/Avatar.png" alt="avatar"><img src="images/dist/Avatar.png" alt="avatar"></div>
+              <div class="header__user-name">Улан Джумагулов</div>
+            </div>
+          </div>
+          <div class="menu__item-right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"></use>
+              </svg>
+            </div>
+          </div></a></div>
+      <div class="block-wrap">
+        <h3>Интерфейс</h3>
+        <div class="menu__item popup-js" data-popup="language"> 
+          <div class="menu__item-left"> 
+            <p>Язык </p>
+          </div>
+          <div class="menu__item-right">
+            <div class="menu__item-selected">Русский </div>
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="menu__item popup-js" data-popup="theme"> 
+          <div class="menu__item-left"> 
+            <p>Тема оформления  </p>
+          </div>
+          <div class="menu__item-right">
+            <div class="menu__item-selected">Светлая </div>
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-      <ul> 
-        <li> <a href="#">Пункт меню1</a></li>
-        <li> <a href="#">Пункт меню2</a></li>
-        <li> <a href="#">Пункт меню3</a></li>
-        <li> <a href="#">Пункт меню4</a></li>
-        <li> <a href="#">Пункт меню5</a></li>
-        <li> <a href="#">Пункт меню6</a></li>
-        <li> <a href="#">Пункт меню7</a></li>
-      </ul>
-      <div class="menu__profile-controls"> 
-        <ul>
-          <li><a href="#"> 
-              <div class="icon">
-                <svg>
-                  <use xlink:href="sprite.svg#login"></use>
-                </svg>
-              </div><span>Вход        </span></a></li>
-          <li> <a href="#"> 
-              <div class="icon">
-                <svg>
-                  <use xlink:href="sprite.svg#logout"></use>
-                </svg>
-              </div><span>Выход      </span></a></li>
-        </ul>
+      <div class="block-wrap">
+        <h3>Социальные сети</h3><a class="menu__item" href="#"> 
+          <div class="menu__item-left"> 
+            <div class="menu__item-img"> <img src="images/dist/inst.png" alt=""></div>
+            <p>@Academy.Dzhumalan </p>
+          </div>
+          <div class="menu__item-right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"> </use>
+              </svg>
+            </div>
+          </div></a><a class="menu__item" href="#"> 
+          <div class="menu__item-left"> 
+            <div class="menu__item-img"> <img src="images/dist/inst.png" alt=""></div>
+            <p>@Dzhumalan</p>
+          </div>
+          <div class="menu__item-right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"> </use>
+              </svg>
+            </div>
+          </div></a><a class="menu__item" href="#"> 
+          <div class="menu__item-left"> 
+            <div class="menu__item-img"> <img src="images/dist/tel.png" alt=""></div>
+            <p>@Marafon.Dzhumalan</p>
+          </div>
+          <div class="menu__item-right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"> </use>
+              </svg>
+            </div>
+          </div></a><a class="menu__item" href="#"> 
+          <div class="menu__item-left"> 
+            <div class="menu__item-img"> <img src="images/dist/youtube.png" alt=""></div>
+            <p>@Academy.Dzhumalan</p>
+          </div>
+          <div class="menu__item-right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"> </use>
+              </svg>
+            </div>
+          </div></a>
       </div>
-      <div class="menu__profile-socials">
-        <ul> 
-          <li> <a href="#">
+    </div>
+    <div class="popup" data-popup="language">
+      <div class="block-wrap popup__window"> 
+        <div class="popup__window-top"> 
+          <h4>Язык</h4>
+          <div class="icon popup-close-js">
+            <svg>
+              <use xlink:href="sprite.svg#close"></use>
+            </svg>
+          </div>
+        </div>
+        <form action=""> 
+          <input type="hidden">
+          <div class="popup__window-item item-popup-js" data-lang="Русский">
+            <div class="popup__window-item-left">
+              <div class="popup__window-item-img"><img src="images/dist/ru.png" alt=""></div>
+              <div class="popup__window-item-label">Русский</div>
+            </div>
+            <div class="popup__window-item-right">
               <div class="icon">
                 <svg>
-                  <use xlink:href="sprite.svg#instagram"> </use>
+                  <use xlink:href="sprite.svg#check"></use>
                 </svg>
-              </div></a></li>
-          <li> <a href="#">
+              </div>
+            </div>
+          </div>
+          <div class="popup__window-item item-popup-js" data-lang="English">
+            <div class="popup__window-item-left">
+              <div class="popup__window-item-img"><img src="images/dist/en.png" alt=""></div>
+              <div class="popup__window-item-label">English</div>
+            </div>
+            <div class="popup__window-item-right">
               <div class="icon">
                 <svg>
-                  <use xlink:href="sprite.svg#facebook"> </use>
+                  <use xlink:href="sprite.svg#check"></use>
                 </svg>
-              </div></a></li>
-          <li> <a href="#">
+              </div>
+            </div>
+          </div>
+          <div class="popup__window-item item-popup-js" data-lang="Кыргыз">
+            <div class="popup__window-item-left">
+              <div class="popup__window-item-img"><img src="images/dist/kg.png" alt=""></div>
+              <div class="popup__window-item-label">Кыргыз</div>
+            </div>
+            <div class="popup__window-item-right">
               <div class="icon">
                 <svg>
-                  <use xlink:href="sprite.svg#whatsapp"> </use>
+                  <use xlink:href="sprite.svg#check"></use>
                 </svg>
-              </div></a></li>
-          <li> <a href="#">
+              </div>
+            </div>
+          </div>
+          <buttn class="button button-popup-js">Сохранить</buttn>
+        </form>
+      </div>
+    </div>
+    <div class="popup" data-popup="theme">
+      <div class="block-wrap popup__window"> 
+        <div class="popup__window-top"> 
+          <h4>Выберите тему</h4>
+          <div class="icon popup-close-js">
+            <svg>
+              <use xlink:href="sprite.svg#close"></use>
+            </svg>
+          </div>
+        </div>
+        <form action=""> 
+          <input type="hidden">
+          <div class="popup__window-item item-popup-js" data-theme="Светлая">
+            <div class="popup__window-item-left">
+              <div class="popup__window-item-img">
+                <div class="icon icon--sun">
+                  <svg>
+                    <use xlink:href="sprite.svg#sun"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="popup__window-item-label">Светлая</div>
+            </div>
+            <div class="popup__window-item-right">
               <div class="icon">
                 <svg>
-                  <use xlink:href="sprite.svg#telegram"> </use>
+                  <use xlink:href="sprite.svg#check"></use>
                 </svg>
-              </div></a></li>
-        </ul>
+              </div>
+            </div>
+          </div>
+          <div class="popup__window-item item-popup-js" data-theme="Темная">
+            <div class="popup__window-item-left">
+              <div class="popup__window-item-img">
+                <div class="icon icon--moon">
+                  <svg>
+                    <use xlink:href="sprite.svg#moon"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="popup__window-item-label">Темная</div>
+            </div>
+            <div class="popup__window-item-right">
+              <div class="icon">
+                <svg>
+                  <use xlink:href="sprite.svg#check"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <buttn class="button button-popup-js">Сохранить</buttn>
+        </form>
       </div>
     </div>
   </div>

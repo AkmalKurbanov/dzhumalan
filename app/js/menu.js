@@ -1,17 +1,21 @@
 $(document).ready(function () {
   // Открыть меню
   $('.menu-js').on('click', function (e) {
+    $(this).parent().addClass('active');
     e.stopPropagation();
     $('.menu').addClass('active');
   });
+});
 
-  // Предотвращаем скрытие при клике внутри .menu__bar
-  $('.menu__bar').on('click', function (e) {
-    e.stopPropagation();
-  });
 
-  // Клик вне .menu__bar — скрыть меню
-  $(document).on('click', function () {
-    $('.menu').removeClass('active');
+$(document).ready(function () {
+  $('.mobile-nav li a').on('click', function (e) {
+    e.preventDefault(); // если нужно предотвратить переход по ссылке
+
+    // Удаляем .active у всех <li>
+    $('.mobile-nav li').removeClass('active');
+
+    // Добавляем .active к тому <li>, по которому кликнули
+    $(this).closest('li').addClass('active');
   });
 });

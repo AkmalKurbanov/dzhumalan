@@ -1,0 +1,52 @@
+extends layouts/main
+
+block vars
+  - var description = '';
+  - var keywords= '';
+  - var ogtitle = '';
+  - var ogtype = '';
+  - var ogurl = '';
+  - var ogimg = '';
+
+block title
+  | main
+block main
+  .container
+    form(action="#")
+      .input 
+        .input__label
+          label(for="login") Логин (обязательно) 
+        .input__field
+          input(type="text" name="login" placeholder="login")#login  
+
+      .select.select-js 
+        .select__label Тип оплаты 
+        .select__input 
+          input(type="hidden" value="")
+        
+        .select__selected-wrap
+          .select__selected Выберите тип оплаты
+          .icon
+            svg
+              use(xlink:href='sprite.svg#angle-down')
+
+
+        .select__dropdown 
+          ul 
+            li.select__item(data-value="Наличные") Наличные
+            li.select__item(data-value="Перевод") Перевод
+            
+      .input__file 
+        .input__label
+          label(for="") Прикрепите чек для оплаты
+        
+        .input__field
+          input(type="file") 
+
+      button.button(type="submit") Купить обучение    
+
+
+
+
+
+  include includes/scripts 

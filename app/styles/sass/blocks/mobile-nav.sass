@@ -1,6 +1,6 @@
 .mobile-nav
-  background: #EBEBFF
-  border-top: 1px solid var(--primary)
+  background: #fff
+  border-top: 1px solid #E8E8E8
   box-sizing: border-box
   
   .container
@@ -28,25 +28,27 @@
 
       a
         text-decoration: none
-        color: var(--primary)
+        color: #868686
         font-weight: bold
         display: flex
         flex-direction: column
         justify-content: center
         align-items: center
         text-align: center
-        font-size: rem(9)
+        font-size: rem(12)
         padding: 10px 5px
+        font-weight: 600
 
         .icon
-          width: 30px
-          height: 30px
+          width: 32px
+          height: 32px
+          fill: #868686
 
       &.active    
         a
-          color: var(--secondary)
+          color: var(--primary)
         
         .icon
-          fill: var(--secondary) 
+          fill: var(--primary) 
 
   

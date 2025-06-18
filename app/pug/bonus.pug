@@ -13,83 +13,117 @@ block title
 block main
   .wrapper
     .content
-        include includes/page-title
+        include includes/title
 
         .container
           .links
             .links__col.links__col--w50
               a(href="#").links__item
-                .links__item-left
-                  .links__item-img-wrap
-                    .links__item-img
-                      img(src="", alt="")
-                  .links__item-info 
-                    p Бонусы System Upgrade = 25 usdt
-                    span 25 usdt
-           
-
+                .links__item-flex-wrap
+                  .links__item-left
+                    .links__item-img-wrap
+                      .links__item-img
+                        img(src="images/dist/link1.png", alt="")
+                      .links__item-img-mini 
+                        img(src="images/dist/link-min.png", alt="")  
+                    .links__item-info 
+                      p Бонусы от личников
+                      span 60 USDT
+            
             .links__col.links__col--w50
               a(href="#").links__item
-                .links__item-left
-                  .links__item-img-wrap
-                    .links__item-img
-                      img(src="", alt="")
-                  .links__item-info 
-                    p Бонусы упущенные
-                    span 25 usdt
+                .links__item-flex-wrap
+                  .links__item-left
+                    .links__item-img-wrap
+                      .links__item-img
+                        img(src="images/dist/link1.png", alt="")
+                      .links__item-img-mini 
+                        img(src="images/dist/link-min.png", alt="")  
+                    .links__item-info 
+                      p Бонусы от команды
+                      span 60,00 USDT
+            
+            .links__col
+              a(href="#").links__item
+                .links__item-flex-wrap
+                  .links__item-left
+                    .links__item-img-wrap
+                      .links__item-img
+                        img(src="images/dist/link1.png", alt="")
+
+                      .links__item-img-mini 
+                        img(src="images/dist/link-min.png", alt="")
+
+                    .links__item-info 
+                      p Начисление бонусов 
+                      span 0,00 USDT
+     
+            .links__col
+              a(href="#").links__item
+                .links__item-flex-wrap
+                  .links__item-left
+                    .links__item-img-wrap
+                      .links__item-img
+                        img(src="images/dist/link2.png", alt="")
+                    .links__item-info 
+                      p Готово к выводу 
+                      span 0 USDT
+                  .links__item-right
+                    .links__item-time
+                      .icon
+                        svg
+                          use(xlink:href='sprite.svg#clock') 
+                      span 23:30
+
+                .links__item-flex-wrap.links__item-flex-wrap--addition-info
+                  .links__item-left
+                    .links__item-img-wrap
+                      .links__item-img
+                        .icon
+                          svg
+                            use(xlink:href='sprite.svg#info')
+                    .links__item-info 
+                      p Условие: <br> 1 личник в текущем месяце
+                  .links__item-right
+                    .links__item-status.links__item-status--error Не выполнено
 
             .links__col
               a(href="#").links__item
-                .links__item-left
-                  .links__item-img-wrap
-                    .links__item-img
-                      img(src="", alt="")
-                  .links__item-info 
-                    p Начисление бонусов 
-                    span 2 usdt
-                .links__item-right
-                  .links__item-time 23:30
-                  .links__item-status.links__item-status--success Выполнено 
+                .links__item-flex-wrap
+                  .links__item-left
+                    .links__item-img-wrap
+                      .links__item-img
+                        img(src="images/dist/link3.png", alt="")
+                    .links__item-info 
+                      p Общая сумма полученных бонусов
+                      span 25 USDT
 
-                  
-            .links__col
+            .links__col.links__col--w50.links__col--secondary
               a(href="#").links__item
-                .links__item-left
-                  .links__item-img-wrap
-                    .links__item-img
-                      img(src="", alt="")
-                    span.links__item-kind trust wallet
-                  .links__item-info 
-                    p Начисление бонусов 
-                    span 2 usdt
-                .links__item-right
-                  .links__item-time 23:30
-                  .links__item-status.links__item-status--error Невыполнено 
-
-                  
-
-            .links__col.links__col--w50
+                .links__item-flex-wrap
+                  .links__item-left
+                    .links__item-img-wrap
+                      .links__item-img
+                        img(src="images/dist/link1.1.png", alt="")
+                      .links__item-img-mini 
+                        img(src="images/dist/link-min.png", alt="")  
+                    .links__item-info 
+                      p Бонусы System Upgrade = 25 USDT
+                      span 60 USDT
+            
+            .links__col.links__col--w50.links__col--secondary
               a(href="#").links__item
-                .links__item-left
-                  .links__item-img-wrap
-                    .links__item-img
-                      img(src="", alt="")
-                  .links__item-info.links__item-info--secondary
-                    p Бонусы System Upgrade = 25 usdt
-                    span 25 usdt
-           
-
-            .links__col.links__col--w50
-              a(href="#").links__item
-                .links__item-left
-                  .links__item-img-wrap
-                    .links__item-img
-                      img(src="", alt="")
-                  .links__item-info.links__item-info--secondary 
-                    p Бонусы упущенные
-                    span 25 usdt
-                
-
+                .links__item-flex-wrap
+                  .links__item-left
+                    .links__item-img-wrap
+                      .links__item-img
+                        img(src="images/dist/link1.1.png", alt="")
+                      .links__item-img-mini 
+                        img(src="images/dist/link-min.png", alt="")  
+                    .links__item-info 
+                      p Бонусы упущенные
+                      span 60,00 USDT
+            
 
 
     include includes/mobile-nav

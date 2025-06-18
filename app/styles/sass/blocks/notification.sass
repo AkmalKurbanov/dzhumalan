@@ -1,0 +1,30 @@
+.notification-list
+  &__item
+    border-radius: 20px
+    overflow: hidden
+
+  &__item
+    display: flex
+    flex-direction: column
+    margin-bottom: 16px
+
+  &__item-top
+    @include dif-xy-center 
+    background: var(--success)
+
+    img
+      width: 100%  
+  
+  &__item-bottom
+    background: #fff
+    padding: 16px
+
+    h3
+      font-size: 16px
+      font-weight: 700
+      margin-bottom: 5px
+
+    p
+      font-size: 13px
+      line-height: 17px
+    

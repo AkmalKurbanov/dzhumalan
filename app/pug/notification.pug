@@ -1,0 +1,44 @@
+extends layouts/main
+
+block vars
+  - var description = 'Уведомления';
+  - var keywords= '';
+  - var ogtitle = '';
+  - var ogtype = '';
+  - var ogurl = '';
+  - var ogimg = '';
+
+block title
+  | Уведомления
+block main
+  .wrapper
+    .content
+        include includes/come-back
+
+        .container
+          .notification-list
+            .notification-list__item 
+              .notification-list__item-top 
+                img(src="images/dist/video2.png", alt="")
+              
+              .notification-list__item-bottom 
+                h3 Название темы
+                p  Lorem ipsum dolor sit amet consectetur. Ullamcorper sed enim morbi molestie sed lectus. Auctor purus velit velit ornare nibh morbi quis rutrum. In eu felis auctor augue pretium mattis. Sit amet eget netus phasellus non.
+
+            .notification-list__item 
+              .notification-list__item-top 
+                img(src="", alt="")
+              
+              .notification-list__item-bottom 
+                h3 Название темы
+                p  Lorem ipsum dolor sit amet consectetur. Ullamcorper sed enim morbi molestie sed lectus. Auctor purus velit velit ornare nibh morbi quis rutrum. In eu felis auctor augue pretium mattis. Sit amet eget netus phasellus non.
+
+
+            
+
+
+
+    include includes/mobile-nav
+
+
+  include includes/scripts 

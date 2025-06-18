@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>История
+    <title>История 
     </title>
     <meta name="description" content="История">
     <meta name="keywords" content="">
@@ -29,7 +29,7 @@
         <div class="container">
           <div class="come-back__wrap"><a class="icon" href="#">
               <svg>
-                <use xlink:href="sprite.svg#arrow-left-o"></use>
+                <use xlink:href="sprite.svg#arrow-left"></use>
               </svg></a>
             <p>История</p>
           </div>
@@ -46,339 +46,57 @@
               </div>
               <p>История операций</p>
             </div>
-            <div class="history__table"> 
-              <table> 
-                <thead>
-                  <tr> 
-                    <th>Номер     </th>
-                    <th>ID <br> login</th>
-                    <th>Статус    </th>
-                    <th>Дата <br> Время    </th>
-                    <th>Сумма <br> Usdt</th>
-                  </tr>
+            <div class="table table--history"> 
+              <table>
+                <thead> 
+                  <th>№</th>
+                  <th>ID <br> Login</th>
+                  <th>Статус</th>
+                  <th>Дата <br> Время</th>
+                  <th>Сумма <br> USDT</th>
                 </thead>
-                <tbody>
-                  <tr class="history__table--status-green">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">1234567890 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
+                <tr class="status-red">
+                  <td> <span>152</span></td>
+                  <td>
+                    <div class="table__id copy-js"><span>123456789</span>
+                      <div class="icon">
+                        <svg>
+                          <use xlink:href="sprite.svg#copy"> </use>
+                        </svg>
                       </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-red">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">12345678902 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
+                      <div class="id-tooltip">Скопировано!</div>
+                    </div>
+                    <p>Улан</p>
+                  </td>
+                  <td> 
+                    <p>Новый подписчик</p>
+                  </td>
+                  <td>
+                    <p>08.06.2025 / 12:30:34 </p>
+                  </td>
+                  <td> <span>6</span></td>
+                </tr>
+                <tr>
+                  <td> <span>152</span></td>
+                  <td>
+                    <div class="table__id copy-js"><span>123456789</span>
+                      <div class="icon">
+                        <svg>
+                          <use xlink:href="sprite.svg#copy"> </use>
+                        </svg>
                       </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-green">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">1234567890 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-red">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">12345678902 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-green">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">1234567890 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-red">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">12345678902 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-green">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">1234567890 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-red">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">12345678902 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-green">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">1234567890 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-red">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">12345678902 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-green">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">1234567890 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-red">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">12345678902 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-green">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">1234567890 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-red">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">12345678902 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-green">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">1234567890 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-red">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">12345678902 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-green">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">1234567890 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-red">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">12345678902 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-green">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">1234567890 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="history__table--status-red">
-                    <td>1</td>
-                    <td>
-                      <div class="history__table-id"><span class="history__table-id-value item-id">12345678902 </span>
-                        <div class="icon copy-js">
-                          <svg>
-                            <use xlink:href="sprite.svg#copy"> </use>
-                          </svg>
-                        </div><span class="id-tooltip">Скопировано!</span>
-                      </div>
-                      <p>Азиза</p>
-                    </td>
-                    <td>Новый подписчик</td>
-                    <td>08.06.2025 12:30:34</td>
-                    <td>2</td>
-                  </tr>
-                </tbody>
+                      <div class="id-tooltip">Скопировано!</div>
+                    </div>
+                    <p>Улан</p>
+                  </td>
+                  <td> 
+                    <p>Новый подписчик</p>
+                  </td>
+                  <td>
+                    <p>08.06.2025 / 12:30:34 </p>
+                  </td>
+                  <td> <span>6</span></td>
+                </tr>
               </table>
             </div>
           </div>
@@ -388,110 +106,242 @@
     <div class="mobile-nav">
       <div class="container">
         <ul> 
-                    <li class="active"><a href="#"> 
+                    <li class="active"><a href="#">
                         <div class="icon">
                           <svg>
                             <use xlink:href="sprite.svg#home"></use>
                           </svg>
                         </div><span>Главная</span></a></li>
-                    <li><a href="#"> 
+                    <li><a href="#">
                         <div class="icon">
                           <svg>
-                            <use xlink:href="sprite.svg#videoles"></use>
+                            <use xlink:href="sprite.svg#videoless"></use>
                           </svg>
-                        </div><span>Видеокурсы</span></a></li>
-                    <li><a href="#"> 
+                        </div><span>Курсы</span></a></li>
+                    <li><a href="#">
                         <div class="icon">
                           <svg>
                             <use xlink:href="sprite.svg#team"></use>
                           </svg>
-                        </div><span>Моя команда</span></a></li>
-                    <li><a href="#"> 
+                        </div><span>Команда</span></a></li>
+                    <li><a href="#">
                         <div class="icon">
                           <svg>
                             <use xlink:href="sprite.svg#wallet"></use>
                           </svg>
                         </div><span>Бонусы</span></a></li>
-                    <li><a href="#"> 
+                    <li><a class="menu-js" href="#">
                         <div class="icon">
                           <svg>
-                            <use xlink:href="sprite.svg#social"></use>
+                            <use xlink:href="sprite.svg#menu"></use>
                           </svg>
-                        </div><span>Соц.сети</span></a></li>
+                        </div><span>Меню</span></a></li>
         </ul>
       </div>
     </div>
   </div>
   <script src="js/app.min.js"> </script>
-  <div class="menu"> 
-    <div class="menu__bar"> 
-      <div class="menu__profile"> 
-        <div class="header__user"><a class="header__user-avatar" href="#"><img class="header__user-avatar-default" src="images/dist/Avatar.png" alt="avatar"></a>
-          <div class="header__user-details">
-            <div class="header__user-id"><span class="item-id">12345678911</span>
-              <button class="header__user-copy copy-js">
-                <div class="icon">
-                  <svg>
-                    <use xlink:href="sprite.svg#copy"></use>
-                  </svg>
-                </div>
-              </button><span class="id-tooltip">Скопировано!      </span>
-            </div><a class="header__user-name" href="#">Улан Джумагулов </a>
+  <div class="menu">
+    <div class="container">
+      <h2 class="title">Меню</h2>
+      <div class="block-wrap"><a class="menu__item" href="#"> 
+          <div class="menu__item-left"> 
+            <div class="header__user">
+              <div class="header__user-avatar"><img class="header__user-avatar-default" src="images/dist/Avatar.png" alt="avatar"><img src="images/dist/Avatar.png" alt="avatar"></div>
+              <div class="header__user-name">Улан Джумагулов</div>
+            </div>
+          </div>
+          <div class="menu__item-right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"></use>
+              </svg>
+            </div>
+          </div></a></div>
+      <div class="block-wrap">
+        <h3>Интерфейс</h3>
+        <div class="menu__item popup-js" data-popup="language"> 
+          <div class="menu__item-left"> 
+            <p>Язык </p>
+          </div>
+          <div class="menu__item-right">
+            <div class="menu__item-selected">Русский </div>
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="menu__item popup-js" data-popup="theme"> 
+          <div class="menu__item-left"> 
+            <p>Тема оформления  </p>
+          </div>
+          <div class="menu__item-right">
+            <div class="menu__item-selected">Светлая </div>
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-      <ul> 
-        <li> <a href="#">Пункт меню1</a></li>
-        <li> <a href="#">Пункт меню2</a></li>
-        <li> <a href="#">Пункт меню3</a></li>
-        <li> <a href="#">Пункт меню4</a></li>
-        <li> <a href="#">Пункт меню5</a></li>
-        <li> <a href="#">Пункт меню6</a></li>
-        <li> <a href="#">Пункт меню7</a></li>
-      </ul>
-      <div class="menu__profile-controls"> 
-        <ul>
-          <li><a href="#"> 
-              <div class="icon">
-                <svg>
-                  <use xlink:href="sprite.svg#login"></use>
-                </svg>
-              </div><span>Вход        </span></a></li>
-          <li> <a href="#"> 
-              <div class="icon">
-                <svg>
-                  <use xlink:href="sprite.svg#logout"></use>
-                </svg>
-              </div><span>Выход      </span></a></li>
-        </ul>
+      <div class="block-wrap">
+        <h3>Социальные сети</h3><a class="menu__item" href="#"> 
+          <div class="menu__item-left"> 
+            <div class="menu__item-img"> <img src="images/dist/inst.png" alt=""></div>
+            <p>@Academy.Dzhumalan </p>
+          </div>
+          <div class="menu__item-right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"> </use>
+              </svg>
+            </div>
+          </div></a><a class="menu__item" href="#"> 
+          <div class="menu__item-left"> 
+            <div class="menu__item-img"> <img src="images/dist/inst.png" alt=""></div>
+            <p>@Dzhumalan</p>
+          </div>
+          <div class="menu__item-right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"> </use>
+              </svg>
+            </div>
+          </div></a><a class="menu__item" href="#"> 
+          <div class="menu__item-left"> 
+            <div class="menu__item-img"> <img src="images/dist/tel.png" alt=""></div>
+            <p>@Marafon.Dzhumalan</p>
+          </div>
+          <div class="menu__item-right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"> </use>
+              </svg>
+            </div>
+          </div></a><a class="menu__item" href="#"> 
+          <div class="menu__item-left"> 
+            <div class="menu__item-img"> <img src="images/dist/youtube.png" alt=""></div>
+            <p>@Academy.Dzhumalan</p>
+          </div>
+          <div class="menu__item-right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"> </use>
+              </svg>
+            </div>
+          </div></a>
       </div>
-      <div class="menu__profile-socials">
-        <ul> 
-          <li> <a href="#">
+    </div>
+    <div class="popup" data-popup="language">
+      <div class="block-wrap popup__window"> 
+        <div class="popup__window-top"> 
+          <h4>Язык</h4>
+          <div class="icon popup-close-js">
+            <svg>
+              <use xlink:href="sprite.svg#close"></use>
+            </svg>
+          </div>
+        </div>
+        <form action=""> 
+          <input type="hidden">
+          <div class="popup__window-item item-popup-js" data-lang="Русский">
+            <div class="popup__window-item-left">
+              <div class="popup__window-item-img"><img src="images/dist/ru.png" alt=""></div>
+              <div class="popup__window-item-label">Русский</div>
+            </div>
+            <div class="popup__window-item-right">
               <div class="icon">
                 <svg>
-                  <use xlink:href="sprite.svg#instagram"> </use>
+                  <use xlink:href="sprite.svg#check"></use>
                 </svg>
-              </div></a></li>
-          <li> <a href="#">
+              </div>
+            </div>
+          </div>
+          <div class="popup__window-item item-popup-js" data-lang="English">
+            <div class="popup__window-item-left">
+              <div class="popup__window-item-img"><img src="images/dist/en.png" alt=""></div>
+              <div class="popup__window-item-label">English</div>
+            </div>
+            <div class="popup__window-item-right">
               <div class="icon">
                 <svg>
-                  <use xlink:href="sprite.svg#facebook"> </use>
+                  <use xlink:href="sprite.svg#check"></use>
                 </svg>
-              </div></a></li>
-          <li> <a href="#">
+              </div>
+            </div>
+          </div>
+          <div class="popup__window-item item-popup-js" data-lang="Кыргыз">
+            <div class="popup__window-item-left">
+              <div class="popup__window-item-img"><img src="images/dist/kg.png" alt=""></div>
+              <div class="popup__window-item-label">Кыргыз</div>
+            </div>
+            <div class="popup__window-item-right">
               <div class="icon">
                 <svg>
-                  <use xlink:href="sprite.svg#whatsapp"> </use>
+                  <use xlink:href="sprite.svg#check"></use>
                 </svg>
-              </div></a></li>
-          <li> <a href="#">
+              </div>
+            </div>
+          </div>
+          <buttn class="button button-popup-js">Сохранить</buttn>
+        </form>
+      </div>
+    </div>
+    <div class="popup" data-popup="theme">
+      <div class="block-wrap popup__window"> 
+        <div class="popup__window-top"> 
+          <h4>Выберите тему</h4>
+          <div class="icon popup-close-js">
+            <svg>
+              <use xlink:href="sprite.svg#close"></use>
+            </svg>
+          </div>
+        </div>
+        <form action=""> 
+          <input type="hidden">
+          <div class="popup__window-item item-popup-js" data-theme="Светлая">
+            <div class="popup__window-item-left">
+              <div class="popup__window-item-img">
+                <div class="icon icon--sun">
+                  <svg>
+                    <use xlink:href="sprite.svg#sun"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="popup__window-item-label">Светлая</div>
+            </div>
+            <div class="popup__window-item-right">
               <div class="icon">
                 <svg>
-                  <use xlink:href="sprite.svg#telegram"> </use>
+                  <use xlink:href="sprite.svg#check"></use>
                 </svg>
-              </div></a></li>
-        </ul>
+              </div>
+            </div>
+          </div>
+          <div class="popup__window-item item-popup-js" data-theme="Темная">
+            <div class="popup__window-item-left">
+              <div class="popup__window-item-img">
+                <div class="icon icon--moon">
+                  <svg>
+                    <use xlink:href="sprite.svg#moon"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="popup__window-item-label">Темная</div>
+            </div>
+            <div class="popup__window-item-right">
+              <div class="icon">
+                <svg>
+                  <use xlink:href="sprite.svg#check"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <buttn class="button button-popup-js">Сохранить</buttn>
+        </form>
       </div>
     </div>
   </div>

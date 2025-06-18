@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>main
+    </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="theme-color" content="#005891">
+    <meta name="msapplication-navbutton-color" content="#005891">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#005891">
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+</html>
+<body>
+  <div class="container">
+    <form action="#">
+      <div class="input"> 
+        <div class="input__label">
+          <label for="login">Логин (обязательно) </label>
+        </div>
+        <div class="input__field">
+          <input type="text" name="login" placeholder="login" id="login">
+        </div>
+      </div>
+      <div class="select select-js"> 
+        <div class="select__label">Тип оплаты </div>
+        <div class="select__input"> 
+          <input type="hidden" value="">
+        </div>
+        <div class="select__selected-wrap">
+          <div class="select__selected">Выберите тип оплаты</div>
+          <div class="icon">
+            <svg>
+              <use xlink:href="sprite.svg#angle-down"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="select__dropdown"> 
+          <ul> 
+            <li class="select__item" data-value="Наличные">Наличные</li>
+            <li class="select__item" data-value="Перевод">Перевод</li>
+          </ul>
+        </div>
+      </div>
+      <div class="input__file"> 
+        <div class="input__label">
+          <label for="">Прикрепите чек для оплаты</label>
+        </div>
+        <div class="input__field">
+          <input type="file">
+        </div>
+      </div>
+      <button class="button" type="submit">Купить обучение    </button>
+    </form>
+  </div>
+  <script src="js/app.min.js"> </script>
+  <div class="menu">
+    <div class="container">
+      <h2 class="title">Меню</h2>
+      <div class="block-wrap"><a class="menu__item" href="#"> 
+          <div class="menu__item-left"> 
+            <div class="header__user">
+              <div class="header__user-avatar"><img class="header__user-avatar-default" src="images/dist/Avatar.png" alt="avatar"><img src="images/dist/Avatar.png" alt="avatar"></div>
+              <div class="header__user-name">Улан Джумагулов</div>
+            </div>
+          </div>
+          <div class="menu__item-right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"></use>
+              </svg>
+            </div>
+          </div></a></div>
+      <div class="block-wrap">
+        <h3>Интерфейс</h3>
+        <div class="menu__item popup-js" data-popup="language"> 
+          <div class="menu__item-left"> 
+            <p>Язык </p>
+          </div>
+          <div class="menu__item-right">
+            <div class="menu__item-selected">Русский </div>
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="menu__item popup-js" data-popup="theme"> 
+          <div class="menu__item-left"> 
+            <p>Тема оформления  </p>
+          </div>
+          <div class="menu__item-right">
+            <div class="menu__item-selected">Светлая </div>
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-wrap">
+        <h3>Социальные сети</h3><a class="menu__item" href="#"> 
+          <div class="menu__item-left"> 
+            <div class="menu__item-img"> <img src="images/dist/inst.png" alt=""></div>
+            <p>@Academy.Dzhumalan </p>
+          </div>
+          <div class="menu__item-right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"> </use>
+              </svg>
+            </div>
+          </div></a><a class="menu__item" href="#"> 
+          <div class="menu__item-left"> 
+            <div class="menu__item-img"> <img src="images/dist/inst.png" alt=""></div>
+            <p>@Dzhumalan</p>
+          </div>
+          <div class="menu__item-right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"> </use>
+              </svg>
+            </div>
+          </div></a><a class="menu__item" href="#"> 
+          <div class="menu__item-left"> 
+            <div class="menu__item-img"> <img src="images/dist/tel.png" alt=""></div>
+            <p>@Marafon.Dzhumalan</p>
+          </div>
+          <div class="menu__item-right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"> </use>
+              </svg>
+            </div>
+          </div></a><a class="menu__item" href="#"> 
+          <div class="menu__item-left"> 
+            <div class="menu__item-img"> <img src="images/dist/youtube.png" alt=""></div>
+            <p>@Academy.Dzhumalan</p>
+          </div>
+          <div class="menu__item-right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="sprite.svg#angle-right"> </use>
+              </svg>
+            </div>
+          </div></a>
+      </div>
+    </div>
+    <div class="popup" data-popup="language">
+      <div class="block-wrap popup__window"> 
+        <div class="popup__window-top"> 
+          <h4>Язык</h4>
+          <div class="icon popup-close-js">
+            <svg>
+              <use xlink:href="sprite.svg#close"></use>
+            </svg>
+          </div>
+        </div>
+        <form action=""> 
+          <input type="hidden">
+          <div class="popup__window-item item-popup-js" data-lang="Русский">
+            <div class="popup__window-item-left">
+              <div class="popup__window-item-img"><img src="images/dist/ru.png" alt=""></div>
+              <div class="popup__window-item-label">Русский</div>
+            </div>
+            <div class="popup__window-item-right">
+              <div class="icon">
+                <svg>
+                  <use xlink:href="sprite.svg#check"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="popup__window-item item-popup-js" data-lang="English">
+            <div class="popup__window-item-left">
+              <div class="popup__window-item-img"><img src="images/dist/en.png" alt=""></div>
+              <div class="popup__window-item-label">English</div>
+            </div>
+            <div class="popup__window-item-right">
+              <div class="icon">
+                <svg>
+                  <use xlink:href="sprite.svg#check"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="popup__window-item item-popup-js" data-lang="Кыргыз">
+            <div class="popup__window-item-left">
+              <div class="popup__window-item-img"><img src="images/dist/kg.png" alt=""></div>
+              <div class="popup__window-item-label">Кыргыз</div>
+            </div>
+            <div class="popup__window-item-right">
+              <div class="icon">
+                <svg>
+                  <use xlink:href="sprite.svg#check"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <buttn class="button button-popup-js">Сохранить</buttn>
+        </form>
+      </div>
+    </div>
+    <div class="popup" data-popup="theme">
+      <div class="block-wrap popup__window"> 
+        <div class="popup__window-top"> 
+          <h4>Выберите тему</h4>
+          <div class="icon popup-close-js">
+            <svg>
+              <use xlink:href="sprite.svg#close"></use>
+            </svg>
+          </div>
+        </div>
+        <form action=""> 
+          <input type="hidden">
+          <div class="popup__window-item item-popup-js" data-theme="Светлая">
+            <div class="popup__window-item-left">
+              <div class="popup__window-item-img">
+                <div class="icon icon--sun">
+                  <svg>
+                    <use xlink:href="sprite.svg#sun"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="popup__window-item-label">Светлая</div>
+            </div>
+            <div class="popup__window-item-right">
+              <div class="icon">
+                <svg>
+                  <use xlink:href="sprite.svg#check"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="popup__window-item item-popup-js" data-theme="Темная">
+            <div class="popup__window-item-left">
+              <div class="popup__window-item-img">
+                <div class="icon icon--moon">
+                  <svg>
+                    <use xlink:href="sprite.svg#moon"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="popup__window-item-label">Темная</div>
+            </div>
+            <div class="popup__window-item-right">
+              <div class="icon">
+                <svg>
+                  <use xlink:href="sprite.svg#check"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <buttn class="button button-popup-js">Сохранить</buttn>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

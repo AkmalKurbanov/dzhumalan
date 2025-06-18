@@ -1,5 +1,5 @@
 .slider
-  margin-top: 20px
+  margin-top: 16px
 
 .swiper
   width: 100%
@@ -8,27 +8,32 @@
     display: flex
 
     .swiper-slide
-      height: 200px
+      height: 220px
+      position: relative
 
       .slide-item
         background: grey
-        border-radius: 25px
+        border-radius: 20px
+        height: 100%
+        overflow: hidden
+        position: absolute
+        width: 100%
         height: 100%
         img
-          width: 100%
-          max-width: 100%
-          height: 100%
+          width: auto
   
   .swiper-pagination         
     position: relative
     top: auto
-    bottom: 0
+    bottom: 5px
     transform: none
 
     .swiper-pagination-bullet
-      width: 25px
-      height: 5px
-      border-radius: 5px
+      width: 24px
+      height: 3px
+      border-radius: 12px
+      background: #A8A8A8
+      opacity: 1
     
       &.swiper-pagination-bullet-active
         background: var(--primary)

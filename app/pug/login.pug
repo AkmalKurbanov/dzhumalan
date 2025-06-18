@@ -1,0 +1,62 @@
+extends layouts/main
+
+block vars
+  - var description = '';
+  - var keywords= '';
+  - var ogtitle = '';
+  - var ogtype = '';
+  - var ogurl = '';
+  - var ogimg = '';
+
+block title
+  | login
+block main
+  .wrapper
+    .content
+      .login 
+        .container 
+          .login__logo 
+            img(src="images/dist/logo.png", alt="")
+
+          form(action="#")
+            .input 
+              .input__label
+                label(for="login") Логин (обязательно) 
+              .input__field
+                input(type="text" name="login")#login   
+            
+            .input 
+              .input__label
+                label(for="number") Телефон
+              .input__field
+                input(type="text" name="number" placeholder="+996555000000")#number
+
+            .input 
+              .input__label
+                label(for="trust") TRUST WALLET адрес USDT (BEP20)
+              .input__field
+                input(type="text" name="trust")#trust   
+
+            .select.select-js 
+              .select__label Тип оплаты 
+              .select__input 
+                input(type="hidden" value="")
+              
+              .select__selected-wrap
+                .select__selected Выберите тип оплаты
+                .icon
+                  svg
+                    use(xlink:href='sprite.svg#angle-down')
+
+
+              .select__dropdown 
+                ul 
+                  li.select__item(data-value="Наличные") Наличные
+                  li.select__item(data-value="Перевод") Перевод    
+
+            button.button(type="submit") Купить обучение          
+
+
+
+
+  include includes/scripts 

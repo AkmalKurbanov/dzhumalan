@@ -5,7 +5,7 @@
   --title-border-color: var(--primary)
 
 body.dark-theme
-  --bg-color: #121212
+  --bg-color: #050505
   --text-color: #eee
   --title-border-color: #fff
 
@@ -19,17 +19,23 @@ body.dark-theme
   .profile__add-info-item .edit .icon,
   .icon
     fill: #fff
-
+  .menu 
+    background: var(--bg-color)
+    
   .mobile-nav
-    background: #2a2a2a
-    border-color: #fff
+    background: #050505
+    border-color: #1C1C1E
     li
-      a
-        color: #fff
 
       &.active
         a
-          color: var(--secondary)
+          color: var(--success)
+        .icon
+          fill: var(--success)
+
+  .icon--sun,
+  .icon--moon
+    fill: #fff!important
 
   .social__item
     color: #fff
@@ -39,34 +45,60 @@ body.dark-theme
   .social__item,
   .video__access,
   .video__prewiev,
-  .links__item
-    background: #2a2a2a
+  .links__item,
+  .notification-list__item-bottom
+    background: #1C1C1E
 
     .links__item-info
       p
         color: #fff
+
+    .links__item-flex-wrap--addition-info    
+      .links__item-info
+        p
+          color: #7800FF
 
   .swiper-pagination-bullet
     background: #e3baba
 
     &.swiper-pagination-bullet-active
       background: #fff!important
-
+  
+  .links__item-time,
   .menu ul li a,
-  .profile__info li,
+  .profile__info,
   .header__user-id,
   .links__item-kind,
-  .header__user-name
+  .header__user-name,
+  .menu__item
     color: #fff
 
   .profile__avatar,
   .profile__avatar-img,
   .menu__profile-socials,
   .menu__profile-controls,
-  .profile__add-info-item,
   .profile__add-info,
   .profile__avatar-img
     border-color: #fff
+
+  .video__access
+    p
+      color: #fff
+
+  .table
+    table
+      tr
+        td
+          &:first-child
+            color: #fff!important    
+
+    &__id
+      .icon
+        fill: var(--success)         
+  
+  .profile__add-info-item
+    input
+      color: #fff      
 
 body
   background-color: var(--bg-color)
@@ -78,7 +110,9 @@ body
   background: none
   color: inherit
   cursor: pointer
-  font-size: 1rem
+  font-size: 22px
   background: none
   outline: none
   border: none
+  padding: 0
+  margin-right: 16px

@@ -1,0 +1,56 @@
+.select
+  position: relative
+  margin-bottom: 16px
+
+  &__label
+    margin-bottom: 8px
+    font-weight: 600
+    font-size: 14px
+    color: #26A17B
+  
+  &__selected-wrap
+    padding: 0 16px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background: #fff
+    border-radius: 20px
+    height: 48px
+    color: #868686
+
+    .icon
+      width: 20px
+      height: 20px
+      fill: #888888!important
+
+  &__dropdown
+    position: absolute
+    background: #fff
+    border-radius: 20px
+    pointer-events: none
+    opacity: 0
+    transition: all .3s
+    top: 100%
+    width: 100%
+
+    ul
+      padding: 0
+      li
+        list-style: none
+        font-weight: 600
+        color: #02079A
+        font-size: 18px
+        padding: 6px 16px
+
+  &--active
+    .select__dropdown
+      opacity: 1
+      pointer-events: inherit
+      top: calc(100% + 17px)
+
+  &--checked
+    .icon
+      fill: #26A17B!important
+    
+    .select__selected
+      color: #02079A  

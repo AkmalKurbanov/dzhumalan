@@ -1,7 +1,7 @@
 extends layouts/main
 
 block vars
-  - var description = 'Моя команда';
+  - var description = 'Команда';
   - var keywords= '';
   - var ogtitle = '';
   - var ogtype = '';
@@ -9,7 +9,7 @@ block vars
   - var ogimg = '';
 
 block title
-  | Моя команда
+  | Команда
 block main
   .wrapper
     .content
@@ -24,190 +24,42 @@ block main
                     use(xlink:href='sprite.svg#team')
                 p Список личников   
 
-              .team-table 
-                table 
+              .table.table--team  
+                table
+                  tr.status-red
+                    td 
+                      span 152
+                    td
+                      .table__id.copy-js
+                        span ID: 123456789
+                        .icon
+                          svg
+                            use(xlink:href='sprite.svg#copy') 
+
+                        .id-tooltip Скопировано!
+
+                      p Улан Джумагулов Уланович
+                    td
+                      span Дата / время:
+                      p 08.06.2025 / 12:30:34 
+              
                   tr
                     td 
                       span 152
                     td
-                      .team-table__id
+                      .table__id.copy-js
                         span ID: 123456789
                         .icon
                           svg
                             use(xlink:href='sprite.svg#copy') 
+
+                        .id-tooltip Скопировано!
+
                       p Улан Джумагулов Уланович
                     td
                       span Дата / время:
                       p 08.06.2025 / 12:30:34 
-                  tr
-                    td 
-                      span 151
-                    td
-                      .team-table__id
-                        span ID: 123456789
-                        .icon
-                          svg
-                            use(xlink:href='sprite.svg#copy') 
-                      p Улан Джумагулов Уланович
-                    td
-                      span Дата / время:
-                      p 08.06.2025 / 12:30:34 
-                  tr
-                    td 
-                      span 150
-                    td
-                      .team-table__id
-                        span ID: 123456789
-                        .icon
-                          svg
-                            use(xlink:href='sprite.svg#copy') 
-                      p Улан Джумагулов Уланович
-                    td
-                      span Дата / время:
-                      p 08.06.2025 / 12:30:34 
-                  tr
-                    td 
-                      span 149
-                    td
-                      .team-table__id
-                        span ID: 123456789
-                        .icon
-                          svg
-                            use(xlink:href='sprite.svg#copy') 
-                      p Улан Джумагулов Уланович
-                    td
-                      span Дата / время:
-                      p 08.06.2025 / 12:30:34 
-                  tr
-                    td 
-                      span 148
-                    td
-                      .team-table__id
-                        span ID: 123456789
-                        .icon
-                          svg
-                            use(xlink:href='sprite.svg#copy') 
-                      p Улан Джумагулов Уланович
-                    td
-                      span Дата / время:
-                      p 08.06.2025 / 12:30:34 
-                  tr
-                    td 
-                      span 147
-                    td
-                      .team-table__id
-                        span ID: 123456789
-                        .icon
-                          svg
-                            use(xlink:href='sprite.svg#copy') 
-                      p Улан Джумагулов Уланович
-                    td
-                      span Дата / время:
-                      p 08.06.2025 / 12:30:34 
-                  tr
-                    td 
-                      span 147
-                    td
-                      .team-table__id
-                        span ID: 123456789
-                        .icon
-                          svg
-                            use(xlink:href='sprite.svg#copy') 
-                      p Улан Джумагулов Уланович
-                    td
-                      span Дата / время:
-                      p 08.06.2025 / 12:30:34 
-                  tr
-                    td 
-                      span 146
-                    td
-                      .team-table__id
-                        span ID: 123456789
-                        .icon
-                          svg
-                            use(xlink:href='sprite.svg#copy') 
-                      p Улан Джумагулов Уланович
-                    td
-                      span Дата / время:
-                      p 08.06.2025 / 12:30:34 
-                  tr
-                    td 
-                      span 145
-                    td
-                      .team-table__id
-                        span ID: 123456789
-                        .icon
-                          svg
-                            use(xlink:href='sprite.svg#copy') 
-                      p Улан Джумагулов Уланович
-                    td
-                      span Дата / время:
-                      p 08.06.2025 / 12:30:34 
-                  tr
-                    td 
-                      span 144
-                    td
-                      .team-table__id
-                        span ID: 123456789
-                        .icon
-                          svg
-                            use(xlink:href='sprite.svg#copy') 
-                      p Улан Джумагулов Уланович
-                    td
-                      span Дата / время:
-                      p 08.06.2025 / 12:30:34 
-                  tr
-                    td 
-                      span 143
-                    td
-                      .team-table__id
-                        span ID: 123456789
-                        .icon
-                          svg
-                            use(xlink:href='sprite.svg#copy') 
-                      p Улан Джумагулов Уланович
-                    td
-                      span Дата / время:
-                      p 08.06.2025 / 12:30:34 
-                  tr
-                    td 
-                      span 142
-                    td
-                      .team-table__id
-                        span ID: 123456789
-                        .icon
-                          svg
-                            use(xlink:href='sprite.svg#copy') 
-                      p Улан Джумагулов Уланович
-                    td
-                      span Дата / время:
-                      p 08.06.2025 / 12:30:34 
-                  tr
-                    td 
-                      span 141
-                    td
-                      .team-table__id
-                        span ID: 123456789
-                        .icon
-                          svg
-                            use(xlink:href='sprite.svg#copy') 
-                      p Улан Джумагулов Уланович
-                    td
-                      span Дата / время:
-                      p 08.06.2025 / 12:30:34 
-                  tr
-                    td 
-                      span 140
-                    td
-                      .team-table__id
-                        span ID: 123456789
-                        .icon
-                          svg
-                            use(xlink:href='sprite.svg#copy') 
-                      p Улан Джумагулов Уланович
-                    td
-                      span Дата / время:
-                      p 08.06.2025 / 12:30:34 
+              
 
             .team__kind 
               .team__col
@@ -218,6 +70,21 @@ block main
                 .team__kind-wrap 
                   h2 Правая команда
                   p 1 234 543
+
+            .referral-link
+              button.button РЕФЕРАЛЬНАЯ ССЫЛКА
+              
+              .referral-link__icon 
+                .icon
+                  svg
+                    use(xlink:href='sprite.svg#copy')
+
+            form(action="#")
+              .input          
+                .input__field
+                  input(type="text" name="search" placeholder="поиск")          
+
+                    
                 
 
 

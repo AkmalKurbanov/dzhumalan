@@ -1,72 +1,167 @@
-.menu 
-  .menu__bar  
-    .menu__profile 
-      div(class="header__user")
-        a(class="header__user-avatar", href="#")
-          img(src="images/dist/Avatar.png" alt="avatar").header__user-avatar-default
-        //- img(src="images/dist/Avatar.png" alt="avatar")
-        div(class="header__user-details")
-          div(class="header__user-id")
-            span.item-id 12345678911
-            button(class="header__user-copy copy-js")
-              .icon
+.menu
+  .container
+    h2.title Меню
+
+    .block-wrap
+      a(href="#").menu__item 
+        .menu__item-left 
+          .header__user
+            .header__user-avatar
+              img(src="images/dist/Avatar.png" alt="avatar").header__user-avatar-default
+              img(src="images/dist/Avatar.png" alt="avatar")
+
+            .header__user-name Улан Джумагулов
+
+        .menu__item-right
+          .icon
+            svg
+              use(xlink:href='sprite.svg#angle-right')
+    
+    .block-wrap
+      h3 Интерфейс
+      .menu__item.popup-js(data-popup="language") 
+        .menu__item-left 
+          p Язык 
+        .menu__item-right
+          .menu__item-selected Русский 
+          .icon
+            svg
+              use(xlink:href='sprite.svg#angle-right')
+
+      .menu__item.popup-js(data-popup="theme") 
+        .menu__item-left 
+          p Тема оформления  
+        .menu__item-right
+          .menu__item-selected Светлая 
+          .icon
+            svg
+              use(xlink:href='sprite.svg#angle-right')
+
+    .block-wrap
+      h3 Социальные сети
+      a(href="#").menu__item 
+        .menu__item-left 
+
+          .menu__item-img 
+            img(src="images/dist/inst.png", alt="") 
+
+          p @Academy.Dzhumalan 
+        .menu__item-right
+          .icon
+            svg
+              use(xlink:href='sprite.svg#angle-right') 
+
+      a(href="#").menu__item 
+        .menu__item-left 
+
+          .menu__item-img 
+            img(src="images/dist/inst.png", alt="") 
+
+          p @Dzhumalan
+        .menu__item-right
+          .icon
+            svg
+              use(xlink:href='sprite.svg#angle-right') 
+
+      a(href="#").menu__item 
+        .menu__item-left 
+
+          .menu__item-img 
+            img(src="images/dist/tel.png", alt="") 
+
+          p @Marafon.Dzhumalan
+        .menu__item-right
+          .icon
+            svg
+              use(xlink:href='sprite.svg#angle-right') 
+
+      a(href="#").menu__item 
+        .menu__item-left 
+
+          .menu__item-img 
+            img(src="images/dist/youtube.png", alt="") 
+
+          p @Academy.Dzhumalan
+        .menu__item-right
+          .icon
+            svg
+              use(xlink:href='sprite.svg#angle-right') 
+
+  .popup(data-popup="language")
+    .block-wrap.popup__window 
+      .popup__window-top 
+        h4 Язык
+        .icon.popup-close-js
+          svg
+            use(xlink:href='sprite.svg#close')
+
+      form(action="") 
+        input(type="hidden")
+        .popup__window-item.item-popup-js(data-lang="Русский")
+          .popup__window-item-left
+            .popup__window-item-img
+              img(src="images/dist/ru.png", alt="")
+            .popup__window-item-label Русский
+          .popup__window-item-right
+            .icon
+              svg
+                use(xlink:href='sprite.svg#check')
+        .popup__window-item.item-popup-js(data-lang="English")
+          .popup__window-item-left
+            .popup__window-item-img
+              img(src="images/dist/en.png", alt="")
+            .popup__window-item-label English
+          .popup__window-item-right
+            .icon
+              svg
+                use(xlink:href='sprite.svg#check')
+        .popup__window-item.item-popup-js(data-lang="Кыргыз")
+          .popup__window-item-left
+            .popup__window-item-img
+              img(src="images/dist/kg.png", alt="")
+            .popup__window-item-label Кыргыз
+          .popup__window-item-right
+            .icon
+              svg
+                use(xlink:href='sprite.svg#check')
+
+        buttn.button.button-popup-js Сохранить
+
+
+  .popup(data-popup="theme")
+    .block-wrap.popup__window 
+      .popup__window-top 
+        h4 Выберите тему
+        .icon.popup-close-js
+          svg
+            use(xlink:href='sprite.svg#close')
+
+      form(action="") 
+        input(type="hidden")
+        .popup__window-item.item-popup-js(data-theme="Светлая")
+          .popup__window-item-left
+            .popup__window-item-img
+              .icon.icon--sun
                 svg
-                  use(xlink:href="sprite.svg#copy")
-            span.id-tooltip Скопировано!      
-          a(class="header__user-name", href="#") Улан Джумагулов 
-    ul 
-      li 
-        a(href="#") Пункт меню1
-      li 
-        a(href="#") Пункт меню2
-      li 
-        a(href="#") Пункт меню3
-      li 
-        a(href="#") Пункт меню4
-      li 
-        a(href="#") Пункт меню5
-      li 
-        a(href="#") Пункт меню6
-      li 
-        a(href="#") Пункт меню7
+                  use(xlink:href='sprite.svg#sun')
+            .popup__window-item-label Светлая
+            
+          .popup__window-item-right
+            .icon
+              svg
+                use(xlink:href='sprite.svg#check')
 
-    .menu__profile-controls 
-      ul
-        li
-          a(href="#") 
-            .icon
-              svg
-                use(xlink:href='sprite.svg#login')
+        .popup__window-item.item-popup-js(data-theme="Темная")
+          .popup__window-item-left
+            .popup__window-item-img
+              .icon.icon--moon
+                svg
+                  use(xlink:href='sprite.svg#moon')
+            .popup__window-item-label Темная
 
-            span Вход        
-
-        li 
-           a(href="#") 
+          .popup__window-item-right
             .icon
               svg
-                use(xlink:href='sprite.svg#logout')
-
-            span Выход      
-
-    .menu__profile-socials
-      ul 
-        li 
-          a(href="#")
-            .icon
-              svg
-                use(xlink:href='sprite.svg#instagram')  
-        li 
-          a(href="#")
-            .icon
-              svg
-                use(xlink:href='sprite.svg#facebook')  
-        li 
-          a(href="#")
-            .icon
-              svg
-                use(xlink:href='sprite.svg#whatsapp')  
-        li 
-          a(href="#")
-            .icon
-              svg
-                use(xlink:href='sprite.svg#telegram')  
+                use(xlink:href='sprite.svg#check')
+        
+        buttn.button.button-popup-js Сохранить
