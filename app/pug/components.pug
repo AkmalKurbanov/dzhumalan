@@ -45,6 +45,42 @@ block main
 
       button.button(type="submit") Купить обучение    
 
+    br
+    button.button.popup-js(data-popup="name-of-popup") popup trigger
+
+    .popup(data-popup="name-of-popup")
+      .block-wrap.popup__window 
+        .popup__window-top 
+          h4 Язык
+          .icon.popup-close-js
+            svg
+              use(xlink:href='sprite.svg#close')
+
+        form(action="#")
+          .input 
+            .input__label
+              label(for="login") Логин (обязательно) 
+            .input__field
+              input(type="text" name="login" placeholder="login")#login
+          .input 
+            .input__label
+              label(for="login") Пароль
+            .input__field
+              input(type="password" name="password" placeholder="password")#password
+              span.toggle-password(data-target="#password")
+                .icon
+                  svg
+                    use(xlink:href='sprite.svg#eye')
+
+          .popup__agree-forget
+            div
+              input(type="checkbox" name="agree")#agree    
+              label(for="agree") Согласие
+
+            div
+              a(href="#") Забыли пароль?        
+
+          button.button submit    
 
 
 

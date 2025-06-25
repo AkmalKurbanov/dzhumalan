@@ -62,7 +62,51 @@
         </div>
       </div>
       <button class="button" type="submit">Купить обучение    </button>
-    </form>
+    </form><br>
+    <button class="button popup-js" data-popup="name-of-popup">popup trigger</button>
+    <div class="popup" data-popup="name-of-popup">
+      <div class="block-wrap popup__window"> 
+        <div class="popup__window-top"> 
+          <h4>Язык</h4>
+          <div class="icon popup-close-js">
+            <svg>
+              <use xlink:href="sprite.svg#close"></use>
+            </svg>
+          </div>
+        </div>
+        <form action="#">
+          <div class="input"> 
+            <div class="input__label">
+              <label for="login">Логин (обязательно) </label>
+            </div>
+            <div class="input__field">
+              <input type="text" name="login" placeholder="login" id="login">
+            </div>
+          </div>
+          <div class="input"> 
+            <div class="input__label">
+              <label for="login">Пароль</label>
+            </div>
+            <div class="input__field">
+              <input type="password" name="password" placeholder="password" id="password"><span class="toggle-password" data-target="#password">
+                <div class="icon">
+                  <svg>
+                    <use xlink:href="sprite.svg#eye"></use>
+                  </svg>
+                </div></span>
+            </div>
+          </div>
+          <div class="popup__agree-forget">
+            <div>
+              <input type="checkbox" name="agree" id="agree">
+              <label for="agree">Согласие</label>
+            </div>
+            <div><a href="#">Забыли пароль?        </a></div>
+          </div>
+          <button class="button">submit    </button>
+        </form>
+      </div>
+    </div>
   </div>
   <script src="js/app.min.js"> </script>
   <div class="menu">
